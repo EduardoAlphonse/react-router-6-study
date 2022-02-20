@@ -38,3 +38,29 @@ export function getInvoices() {
 export function getInvoice(number: number) {
   return invoices.find((invoice) => invoice.number === number);
 }
+
+let clients = [
+  {
+    id: 3422,
+    name: 'Alex LastName',
+    number: '+5531988789988',
+  },
+  {
+    id: 6011,
+    name: 'Maurício Ribeiro',
+    number: '+5521978212244',
+  },
+  {
+    id: 5010,
+    name: 'Fernando Rogério',
+    number: '+5524922740192',
+  },
+];
+
+export function getClients() {
+  return clients;
+}
+
+export function getClient(id: number) {
+  return clients.find((client) => client.id === id);
+}
